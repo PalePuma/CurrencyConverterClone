@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Currency Converter Clone</title>
+    <meta name="description" content="Currency Converter Clone." />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script defer src="assets/js/lib/money.min.js"></script>
+    <script defer src="assets/js/lib/accounting.min.js"></script>
+    <script defer src="assets/js/model.js"></script>
+    <script defer src="assets/js/app.js"></script>
+  </head>
+  <body>
+    <h3>Currency Converter Clone</h3>
+    <div id="card">
+      <div id="card-contents">
+        <div id="left-col">
+          <div id="exg-rate">
+            <div id="base-price">
+              <span class="base"></span>
+              <span class="base"></span>
+              equals
+            </div>
+            <div id="tgt-price">
+              <span class="tgt"></span>
+              <span class="tgt"></span>
+            </div>
+          </div>
+          <div id="timestamp">
+            Exchange Rates from <span id="date"></span>
+          </div>
+
+          <div id="form-controls">
+            <table >
+              <tbody>
+                <tr>
+                  <td><input type="number" value="1" class="base"></td>
+                  <td class="h-space"></td>
+                  <td>
+                    <div class="cur-border">
+                      <select class="base">
+                        <option value="AUD">Australian Dollar</option>
+                        <option value="BRL">Brazilian Real</option>
+                        <option value="BGN">Bulgarian Lev</option>
+                        <option value="CAD">Canadian Dollar</option>
+                        <option value="CNY">Chinese Yuan</option>
+                        <option value="HRK">Croatian Kuna</option>
+                        <option value="CZK">Czech Koruna</option>
+                        <option value="DKK">Danish Krone</option>
+                        <option value="EUR">Euro</option>
+                        <option value="HKD">Hong Kong Dollar</option>
+                        <option value="HUF">Hungarian Forint</option>
+                        <option value="ISK">Icelandic Krona</option>
+                        <option value="INR">Indian Rupee</option>
+                        <option value="IDR">Indonesian Rupiah</option>
+                        <option value="ILS">Israeli New Shekel</option>
+                        <option value="JPY">Japanese Yen</option>
+                        <option value="MYR">Malaysian Ringgit</option>
+                        <option value="MXN">Mexican Peso</option>
+                        <option value="NZD">New Zealand Dollar</option>
+                        <option value="NOK">Norwegian Krone</option>
+                        <option value="PHP">Philippine peso</option>
+                        <option value="PLN">Poland zloty</option>
+                        <option value="GBP">Pound sterling</option>
+                        <option value="RON">Romanian Leu</option>
+                        <option value="RUB">Russian Ruble</option>
+                        <option value="SGD">Singapore Dollar</option>
+                        <option value="ZAR">South African Rand</option>
+                        <option value="KRW">South Korean won</option>
+                        <option value="SEK">Swedish Krona</option>
+                        <option value="CHF">Swiss Franc</option>
+                        <option value="THB">Thai Baht</option>
+                        <option value="TRY">Turkish lira</option>
+                        <option value="USD" selected="selected">United States Dollar</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="v-space"><td></td><td></td><td></td></tr>
+                <tr>
+                  <td><input type="number" class="tgt"></td>
+                  <td class="h-space"></td>
+                  <td>
+                    <div class="cur-border">
+                      <select class="tgt">
+                        <option value="AUD">Australian Dollar</option>
+                        <option value="BRL">Brazilian Real</option>
+                        <option value="BGN">Bulgarian Lev</option>
+                        <option value="CAD">Canadian Dollar</option>
+                        <option value="CNY">Chinese Yuan</option>
+                        <option value="HRK">Croatian Kuna</option>
+                        <option value="CZK">Czech Koruna</option>
+                        <option value="DKK">Danish Krone</option>
+                        <option value="EUR" selected="selected">Euro</option>
+                        <option value="HKD">Hong Kong Dollar</option>
+                        <option value="HUF">Hungarian Forint</option>
+                        <option value="ISK">Icelandic Krona</option>
+                        <option value="INR">Indian Rupee</option>
+                        <option value="IDR">Indonesian Rupiah</option>
+                        <option value="ILS">Israeli New Shekel</option>
+                        <option value="JPY">Japanese Yen</option>
+                        <option value="MYR">Malaysian Ringgit</option>
+                        <option value="MXN">Mexican Peso</option>
+                        <option value="NZD">New Zealand Dollar</option>
+                        <option value="NOK">Norwegian Krone</option>
+                        <option value="PHP">Philippine peso</option>
+                        <option value="PLN">Poland zloty</option>
+                        <option value="GBP">Pound sterling</option>
+                        <option value="RON">Romanian Leu</option>
+                        <option value="RUB">Russian Ruble</option>
+                        <option value="SGD">Singapore Dollar</option>
+                        <option value="ZAR">South African Rand</option>
+                        <option value="KRW">South Korean won</option>
+                        <option value="SEK">Swedish Krona</option>
+                        <option value="CHF">Swiss Franc</option>
+                        <option value="THB">Thai Baht</option>
+                        <option value="TRY">Turkish lira</option>
+                        <option value="USD">United States Dollar</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="right-col"></div>
+      </div>
+      <span id="data-source">
+        Data provided by the Exchange Rates API at <a href="https://exchangeratesapi.io">https://exchangeratesapi.io</a>
+      </span>
+    </div>
+  </body>
+</html>
