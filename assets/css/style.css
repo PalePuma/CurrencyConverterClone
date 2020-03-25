@@ -1,0 +1,93 @@
+body, input {
+  font-family: Arial,sans-serif;
+}
+
+body {
+  padding: 20px 0px 0px 55px;
+}
+
+a {
+  color: #70757A;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#card {
+  width: 620px;
+  padding: 20px 16px;
+  border: 2px solid #828282;
+  border-radius: 8px;
+}
+
+#card-contents {
+  display: flex;
+  align-items: center;
+}
+
+#base-price {
+  color: #70757A;
+  font-size: 16px;
+}
+
+#tgt-price {
+  margin-top: 4px;
+	font-size: 36px;
+}
+
+#timestamp {
+  color: #70757A;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-size: 12px;
+}
+
+.v-space {
+  height: 4px;
+}
+
+.h-space {
+  width: 5px;
+}
+
+input {
+  height: 36px;
+  width: 130px;
+  padding: 6px 0px 6px 12px;
+  color: #70757A;
+  border: 1px solid #DFE1E5;
+  border-radius: 6px;
+  font-size: 16px;
+	background: transparent;
+}
+
+.cur-border {
+  padding: 6px 8px 6px 0px;
+  border: 1px solid #DFE1E5;
+	border-radius: 6px;
+  overflow: hidden;
+}
+
+select {
+  height: 36px;
+  width: 250px;
+  padding-left: 8px;
+	border: none;
+  font-size: 13px;
+  vertical-align: middle;
+  background-color: #fff;
+}
+
+#right-col {
+  width: 100%;
+  text-align: right;
+}
+
+#data-source {
+  display: block;
+  margin-top: 19px;
+  color: #70757A;
+  font-size: 12px;
+}
